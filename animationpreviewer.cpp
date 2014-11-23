@@ -32,7 +32,6 @@ void AnimationPreviewer::updateDisplay()
     {
         setPixmap(QPixmap(files_.at(index_ % files_.size())));
         show();
-        qDebug() << "update" <<files_.at(index_ % files_.size());
     }
 }
 

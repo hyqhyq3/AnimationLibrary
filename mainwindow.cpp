@@ -51,6 +51,9 @@ void MainWindow::on_pushButton_clicked()
 {
 #ifdef WIN32
     QProcess* process = new QProcess(this);
-    process->startDetached("explorer.exe", QStringList() << "/select," + ui->label->firstFile() );
+    QString file = QDir::toNativeSeparators(ui->label->firstFile());
+//    process->startDetached(QString("explorer.exe /select,\"{1}\"").arg(file) );
+    QByteArray p = QString("explorer.exe /select,\"%1\"").arg(file).toLocal8Bit();
+    system(p.data());
 #endif
 }
