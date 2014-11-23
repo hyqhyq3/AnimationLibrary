@@ -27,3 +27,5 @@ RC_FILE += myapp.rc
 
 OTHER_FILES += \
     myapp.rc
+
+ICON += animation.icns
