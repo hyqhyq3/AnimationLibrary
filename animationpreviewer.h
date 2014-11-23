@@ -14,6 +14,8 @@ public:
     void setFiles(QStringList files);
     void setInterval(int interval);
     void updateDisplay();
+
+    QString firstFile();
 signals:
 
 public slots:

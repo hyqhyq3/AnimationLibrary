@@ -36,6 +36,18 @@ void AnimationPreviewer::updateDisplay()
     }
 }
 
+QString AnimationPreviewer::firstFile()
+{
+    if(files_.empty())
+    {
+        return "";
+    }
+    else
+    {
+        return files_.front();
+    }
+}
+
 void AnimationPreviewer::onTimer()
 {
     ++index_;

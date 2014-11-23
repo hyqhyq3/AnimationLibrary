@@ -46,3 +46,11 @@ void MainWindow::showAnimation(QString path)
     }
     ui->label->setFiles(names);
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+#ifdef WIN32
+    QProcess* process = new QProcess(this);
+    process->startDetached("explorer.exe", QStringList() << "/select," + ui->label->firstFile() );
+#endif
+}

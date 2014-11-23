@@ -20,6 +20,9 @@ public slots:
 
     void onItemSelected(QModelIndex index);
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     void showAnimation(QString path);
 

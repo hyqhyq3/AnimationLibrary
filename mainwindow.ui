@@ -85,6 +85,13 @@
         </item>
        </layout>
       </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>在资源管理器中查看</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
