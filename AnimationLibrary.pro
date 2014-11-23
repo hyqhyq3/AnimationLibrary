@@ -22,3 +22,8 @@ HEADERS  += mainwindow.h \
     animationlibrary.h
 
 FORMS    += mainwindow.ui
+
+RC_FILE += myapp.rc
+
+OTHER_FILES += \
+    myapp.rc
